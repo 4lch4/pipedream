@@ -1,0 +1,28 @@
+{
+  "name": "@4lch4/hephaestus",
+  "displayName": "Hephaestus",
+  "version": "0.0.1",
+  "description": "A webservice/API for building ADO pipelines.",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "email": "hello@alcha.org",
+    "name": "4lch4",
+    "url": "https://hasslefree.solutions"
+  },
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "azure-devops-node-api": "^9.0.1",
+    "morgan": "^1.9.1",
+    "restify": "^8.4.0",
+    "restify-errors": "^8.0.1",
+    "simple-node-logger": "^18.12.23"
+  },
+  "nodemonConfig": {
+    "ignore": ["logs/*"],
+    "delay": 300
+  }
+}
